@@ -37,3 +37,8 @@ bower.json
 /nbproject
 /public/assets
 /.idea
+
+/locale/*.pot
+/locale/*/busify.edit.po
+/locale/*/busify.po.time_stamp
+/locale/*/LC_MESSAGES/*.mo

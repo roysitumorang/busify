@@ -51,3 +51,4 @@ gem 'minitest-rails', group: :test
 gem 'cancan'
 gem 'activerecord-session_store'
 gem 'gettext_i18n_rails'
+gem 'gettext'

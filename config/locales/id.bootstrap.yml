@@ -1,25 +1,25 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+id:
   breadcrumbs:
     application:
-      root: "Home"
+      root: "Halaman Depan"
     pages:
-      pages: "Pages"
+      pages: "Halaman"
     home:
-      root: "Home"
+      root: "Halaman Depan"
   helpers:
-    actions: "Actions"
+    actions: "Aksi"
     links:
-      back: "Back"
-      cancel: "Cancel"
-      confirm: "Are you sure?"
-      destroy: "Delete"
-      new: "New"
+      back: "Kembali"
+      cancel: "Batal"
+      confirm: "Anda yakin?"
+      destroy: "Hapus"
+      new: "Baru"
       edit: "Edit"
     titles:
       edit: "Edit %{model}"
-      save: "Save %{model}"
-      new: "New %{model}"
-      delete: "Delete %{model}"
+      save: "Simpan %{model}"
+      new: "%{model} Baru"
+      delete: "Hapus %{model}"
