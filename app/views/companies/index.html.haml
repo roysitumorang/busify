@@ -1,0 +1,23 @@
+= render partial: 'index_navbar', locals: { companies: @companies }
+
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th.text-center= _('Name')
+      %th.text-center= _('Operator Type')
+      %th.text-center= _('Address')
+      %th.text-center= _('Phone')
+      %th
+
+  %tbody
+    - @companies.each do |company|
+      %tr
+        %td= company.name
+        %td= company.operator_types
+        %td= company.address
+        %td= company.phones
+        %td.text-center= link_to _('Show'), company_path(company.slug)
+
+%br
+
+= render partial: 'index_navbar', locals: { companies: @companies }

@@ -10,10 +10,12 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: mysql
-  username: busify
-  password: Bus1fy.com
+  adapter: postgresql
+  encoding: unicode
   host: localhost
+  port: 5432
+  username: postgres
+  password: postgres
 
 development:
   <<: *default

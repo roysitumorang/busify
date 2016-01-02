@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: busify 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-12-31 20:50+0700\n"
+"PO-Revision-Date: 2016-01-01 03:45+0700\n"
 "Last-Translator: Roy Situmorang <roy.situmorang@gmail.com>\n"
 "Language-Team: English\n"
 "Language: en\n"
@@ -16,6 +16,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 1.8.6\n"
+"POT-Creation-Date: \n"
+
+msgid "English"
+msgstr ""
+
+msgid "Indonesian"
+msgstr ""
+
+msgid "Show"
+msgstr ""
+
+msgid "New"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Destroy"
+msgstr ""
+
+msgid "was successfully"
+msgstr ""
+
+msgid "created"
+msgstr ""
+
+msgid "updated"
+msgstr ""
+
+msgid "destroyed"
+msgstr ""
 
 msgid "Home"
-msgstr "Home"
+msgstr ""
+
+msgid "Companies"
+msgstr ""
+
+msgid "Company"
+msgstr ""
+
+msgid "Profile"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "Address"
+msgstr ""
+
+msgid "Operator Type"
+msgstr ""
+
+msgid "Phone"
+msgstr ""

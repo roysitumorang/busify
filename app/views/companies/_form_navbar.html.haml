@@ -1,0 +1,6 @@
+%ul.pager
+  %li.previous.pull-left
+    = link_to(company.persisted? ? company_path(company.slug) : companies_path) { "#{fa_icon('arrow-left')} #{_('Back')}".html_safe }
+  %li.pull-right
+    = f.form_group do
+      = f.submit _('Save'), class: 'btn btn-primary'

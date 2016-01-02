@@ -1,0 +1,5 @@
+%ul.nav.nav-tabs
+  %li{ role: :presentation, class: params[:controller] == 'companies' ? 'active' : '' }
+    = link_to company.persisted? ? company_path(company.slug) : new_company_path do
+      = fa_icon :user
+      = _('Profile')

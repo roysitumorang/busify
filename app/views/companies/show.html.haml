@@ -1,0 +1,23 @@
+= render partial: 'shared/company_navbar', locals: { company: @company }
+
+= render partial: 'show_navbar', locals: { company: @company }
+
+%table.table.table-bordered.table-striped
+  %tr
+    %td
+      %b= "#{_('Name')}:"
+    %td= @company.name
+  %tr
+    %td
+      %b= "#{_('Operator Type')}:"
+    %td= @company.operator_types
+  %tr
+    %td
+      %b= "#{_('Address')}:"
+    %td= @company.address
+  %tr
+    %td
+      %b= "#{_('Phone')}:"
+    %td= @company.phones
+
+= render partial: 'show_navbar', locals: { company: @company }

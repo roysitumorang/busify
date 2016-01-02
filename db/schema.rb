@@ -11,11 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151231085108) do
+ActiveRecord::Schema.define(version: 20151231141649) do
+
+  create_table "companies", force: :cascade do |t|
+    t.string   "name",          limit: 255,              null: false
+    t.string   "slug",          limit: 255,              null: false
+    t.string   "operator_type", limit: 255, default: [], null: false, array: true
+    t.text     "address"
+    t.string   "phone",         limit: 255, default: [], null: false, array: true
+    t.integer  "created_by"
+    t.integer  "updated_by"
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+  end
+
+  add_index "companies", ["created_by"], name: "index_companies_on_created_by", using: :btree
+  add_index "companies", ["name"], name: "index_companies_on_name", unique: true, using: :btree
+  add_index "companies", ["operator_type"], name: "index_companies_on_operator_type", using: :btree
+  add_index "companies", ["slug"], name: "index_companies_on_slug", using: :btree
+  add_index "companies", ["updated_by"], name: "index_companies_on_updated_by", using: :btree
 
   create_table "sessions", force: :cascade do |t|
-    t.string   "session_id", limit: 255,   null: false
-    t.text     "data",       limit: 65535
+    t.string   "session_id", limit: 255, null: false
+    t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

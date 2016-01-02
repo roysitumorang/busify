@@ -9,6 +9,11 @@ id:
       pages: "Halaman"
     home:
       root: "Halaman Depan"
+    companies:
+      root: "Halaman Depan"
+      companies: "Operator"
+      new: "Tambah"
+      edit: "Edit"
   helpers:
     actions: "Aksi"
     links:

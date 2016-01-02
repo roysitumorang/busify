@@ -1,0 +1,10 @@
+= render partial: 'shared/company_navbar', locals: { company: @company }
+
+= bootstrap_form_for @company, url: url, html: { method: method }, layout: :horizontal do |f|
+  = render partial: 'form_navbar', locals: { f: f, company: @company }
+  = f.text_field :name, label: _('Name'), placeholder: _('Name')
+  = f.collection_check_boxes :operator_type, @operator_types, :first, :last, label: _('Operator Type'), inline: true
+  = f.text_area :address, label: _('Address'), placeholder: _('Addres')
+  - 5.times do |i|
+    = f.text_field :phone, name: 'company[phone][]', id: "phone_#{i}", value: @company.phone[i], label: "#{_('Phone')} #{i + 1}", placeholder: "#{_('Phone')} #{i + 1}", control_col: 'col-sm-3'
+  = render partial: 'form_navbar', locals: { f: f, company: @company }

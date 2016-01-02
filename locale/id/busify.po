@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: busify 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-12-31 20:31+0700\n"
+"PO-Revision-Date: 2016-01-02 18:15+0700\n"
 "Last-Translator: Roy Situmorang <roy.situmorang@gmail.com>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -15,7 +15,65 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"\n"
+"POT-Creation-Date: \n"
+"X-Generator: Poedit 1.8.6\n"
+
+msgid "English"
+msgstr "Bahasa Inggris"
+
+msgid "Indonesian"
+msgstr "Bahasa Indonesia"
+
+msgid "Show"
+msgstr "Selengkapnya"
+
+msgid "New"
+msgstr "Tambah"
+
+msgid "Edit"
+msgstr "Edit"
+
+msgid "Save"
+msgstr "Simpan"
+
+msgid "Back"
+msgstr "Kembali"
+
+msgid "Destroy"
+msgstr "Hapus"
+
+msgid "was successfully"
+msgstr "berhasil"
+
+msgid "created"
+msgstr "ditambah"
+
+msgid "updated"
+msgstr "diubah"
+
+msgid "destroyed"
+msgstr "dihapus"
 
 msgid "Home"
 msgstr "Halaman Depan"
+
+msgid "Companies"
+msgstr "Operator"
+
+msgid "Company"
+msgstr "Operator"
+
+msgid "Profile"
+msgstr "Profil"
+
+msgid "Name"
+msgstr "Nama"
+
+msgid "Address"
+msgstr "Alamat"
+
+msgid "Operator Type"
+msgstr "Tipe Operator"
+
+msgid "Phone"
+msgstr "Telepon / HP"

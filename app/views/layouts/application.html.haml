@@ -24,7 +24,19 @@
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
-        = nav_bar fixed: :top, responsive: true, brand: 'Busify'
+        = nav_bar fixed: :top, responsive: true, brand: 'Busify' do
+          = menu_group do
+            = menu_item root_path do
+              = fa_icon :home
+              = _('Home')
+            = menu_item companies_path do
+              = fa_icon :bus
+              = _('Companies')
+          = menu_group pull: :right do
+            = drop_down image_tag("#{FastGettext.locale == 'en' ? :en : :id}.png") do
+              = menu_item "/#{FastGettext.locale == 'en' ? :id : :en}" do
+                = image_tag("#{FastGettext.locale == 'en' ? :id : :en}.png")
+                = _(FastGettext.locale == 'en' ? 'Indonesian' : 'English')
 
     .container
       = render_breadcrumbs("", class: '', item_class: '', divider_class: '', active_class: 'active', separator: '')

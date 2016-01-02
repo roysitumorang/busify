@@ -9,6 +9,11 @@ en:
       pages: "Pages"
     home:
       root: "Home"
+    companies:
+      root: "Home"
+      companies: "Operators"
+      new: "New"
+      edit: "Edit"
   helpers:
     actions: "Actions"
     links:

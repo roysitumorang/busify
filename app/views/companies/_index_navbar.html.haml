@@ -1,0 +1,3 @@
+%ul.pager
+  %li.previous.pull-left= will_paginate companies, renderer: BootstrapPagination::Rails
+  %li.pull-right= link_to(new_company_path) { "#{fa_icon('plus-circle')} #{_('New')}".html_safe }
