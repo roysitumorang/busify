@@ -1,3 +1,9 @@
 %ul.pager
-  %li.previous.pull-left= link_to(companies_path) { "#{fa_icon('arrow-left')} #{_('Back')}".html_safe }
-  %li.pull-right= link_to(edit_company_path(company.slug)) { "#{fa_icon(:edit)} #{t(:edit)}".html_safe }
+  %li.previous.pull-left
+    = link_to companies_path do
+      = fa_icon('arrow-left')
+      = _('Back')
+  %li.pull-right
+    = link_to edit_company_path(company.slug) do
+      = fa_icon(:edit)
+      = _('Edit')
