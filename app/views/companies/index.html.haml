@@ -1,4 +1,8 @@
-= render partial: 'index_navbar', locals: { companies: @companies }
+%ul.pager
+  %li.pull-right
+    = link_to(new_company_path) do
+      = fa_icon('plus-circle')
+      = _('New').html_safe
 
 %table.table.table-bordered.table-striped
   %thead
@@ -16,8 +20,10 @@
         %td= company.operator_types
         %td= company.address
         %td= company.phones
-        %td.text-center= link_to _('Show'), company_path(company.slug)
+        %td.text-center
+          = link_to company_path(company.slug) do
+            = fa_icon('folder-open')
+            = _('Show')
 
-%br
-
-= render partial: 'index_navbar', locals: { companies: @companies }
+%ul.pager
+  %li.pull-right= will_paginate @companies, renderer: BootstrapPagination::Rails

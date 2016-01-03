@@ -34,7 +34,7 @@
               = n_('Province', 'Provinces', 2)
             = menu_item companies_path do
               = fa_icon :bus
-              = _('Companies')
+              = n_('Company', 'Companies', 2)
           = menu_group pull: :right do
             = drop_down image_tag("#{FastGettext.locale == 'en' ? :en : :id}.png") do
               = menu_item "/#{FastGettext.locale == 'en' ? :id : :en}" do
