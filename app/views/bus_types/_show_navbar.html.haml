@@ -1,0 +1,9 @@
+%ul.pager
+  %li.previous.pull-left
+    = link_to bus_types_path do
+      = fa_icon('arrow-left')
+      =_('Back')
+  %li.pull-right
+    = link_to edit_bus_type_path(bus_type.slug) do
+      = fa_icon(:edit)
+      =_('Edit')

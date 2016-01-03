@@ -1,0 +1,8 @@
+= bootstrap_form_for @bus_type, url: url, html: { method: method }, layout: :horizontal do |f|
+  = render partial: 'form_navbar', locals: { f: f, bus_type: @bus_type }
+  = f.text_field :name, label: _('Name'), placeholder: _('Name')
+  = f.text_field :capacity, label: _('Capacity'), placeholder: _('Capacity')
+  = f.collection_radio_buttons :right, @seat_formation[:right], :first, :last, label: _('Right'), inline: true
+  = f.collection_radio_buttons :left, @seat_formation[:left], :first, :last, label: _('Left'), inline: true
+  = f.collection_check_boxes :facility, @facilities, :first, :last, label: _('Facility'), inline: true
+  = render partial: 'form_navbar', locals: { f: f, bus_type: @bus_type }

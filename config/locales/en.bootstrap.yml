@@ -25,6 +25,11 @@ en:
       cities: "Cities"
       new: "New"
       edit: "Edit"
+    bus_types:
+      root: "Home"
+      bus_types: "Bus Types"
+      new: "New"
+      edit: "Edit"
   helpers:
     actions: "Actions"
     links:

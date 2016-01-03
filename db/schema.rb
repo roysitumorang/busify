@@ -11,7 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160102133026) do
+ActiveRecord::Schema.define(version: 20160103063113) do
+
+  create_table "bus_types", force: :cascade do |t|
+    t.string   "name",       limit: 255,              null: false
+    t.string   "slug",       limit: 255,              null: false
+    t.integer  "capacity",                            null: false
+    t.integer  "left",                                null: false
+    t.integer  "right",                               null: false
+    t.string   "facility",   limit: 255, default: [], null: false, array: true
+    t.integer  "created_by"
+    t.integer  "updated_by"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+  end
+
+  add_index "bus_types", ["capacity"], name: "index_bus_types_on_capacity", using: :btree
+  add_index "bus_types", ["created_by"], name: "index_bus_types_on_created_by", using: :btree
+  add_index "bus_types", ["name"], name: "index_bus_types_on_name", using: :btree
+  add_index "bus_types", ["slug"], name: "index_bus_types_on_slug", using: :btree
+  add_index "bus_types", ["updated_by"], name: "index_bus_types_on_updated_by", using: :btree
 
   create_table "companies", force: :cascade do |t|
     t.string   "name",          limit: 255,              null: false

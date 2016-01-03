@@ -1,0 +1,6 @@
+%ul.pager
+  %li.previous.pull-left
+    = link_to(bus_type.persisted? ? bus_type_path(bus_type.slug) : bus_types_path) { "#{fa_icon('arrow-left')} #{_('Back')}".html_safe }
+  %li.pull-right
+    = f.form_group do
+      = f.submit _('Save'), class: 'btn btn-primary'

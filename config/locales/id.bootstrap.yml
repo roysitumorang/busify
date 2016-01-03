@@ -25,6 +25,11 @@ id:
       cities: "Kota"
       new: "Tambah"
       edit: "Edit"
+    bus_types:
+      root: "Halaman Depan"
+      bus_types: "Kelas Bis"
+      new: "New"
+      edit: "Edit"
   helpers:
     actions: "Aksi"
     links:

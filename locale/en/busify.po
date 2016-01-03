@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: busify 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-01-03 13:20+0700\n"
+"PO-Revision-Date: 2016-01-03 14:55+0700\n"
 "Last-Translator: Roy Situmorang <roy.situmorang@gmail.com>\n"
 "Language-Team: English\n"
 "Language: en\n"
@@ -89,3 +89,28 @@ msgid "City"
 msgid_plural "Cities"
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "Bus type"
+msgid_plural "Bus types"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Seat"
+msgid_plural "Seats"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Capacity"
+msgstr ""
+
+msgid "Seat Formation"
+msgstr ""
+
+msgid "Left"
+msgstr ""
+
+msgid "Right"
+msgstr ""
+
+msgid "Facility"
+msgstr ""

@@ -1,0 +1,17 @@
+= render partial: 'show_navbar', locals: { bus_type: @bus_type }
+
+%table.table.table-bordered.table-striped
+  %tr
+    %td
+      %b= "#{_('Name')}:"
+    %td= @bus_type.name
+  %tr
+    %td
+      %b= "#{_('Capacity')} / #{_('Seat Formation')} (#{_('Right')} - #{_('Left')}):"
+    %td= "#{@bus_type.capacity} #{n_('Seat', 'Seats', 2)} / #{@bus_type.right} - #{@bus_type.left}"
+  %tr
+    %td
+      %b= "#{_('Facility')}:"
+    %td= @bus_type.facilities
+
+= render partial: 'show_navbar', locals: { bus_type: @bus_type }

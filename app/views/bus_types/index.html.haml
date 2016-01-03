@@ -1,0 +1,32 @@
+%ul.pager
+  %li.pull-right
+    = link_to(new_bus_type_path) do
+      = fa_icon('plus-circle')
+      = _('New').html_safe
+
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th.text-center= _('Name')
+      %th.text-center= _('Capacity')
+      %th.text-center
+        = "#{_('Seat Formation')}"
+        %br
+        = "(#{_('Right')} - #{_('Left')})"
+      %th.text-center= _('Facility')
+      %th
+
+  %tbody
+    - @bus_types.each do |bus_type|
+      %tr
+        %td= bus_type.name
+        %td.text-center= "#{bus_type.capacity} #{n_('Seat', 'Seats', 2)}"
+        %td.text-center= "#{bus_type.right} - #{bus_type.left}"
+        %td= bus_type.facilities
+        %td
+          = link_to bus_type_path(bus_type.slug), class: 'text-nowrap' do
+            = fa_icon('folder-open')
+            = _('Show')
+
+%ul.pager
+  %li.pull-right= will_paginate @bus_types, renderer: BootstrapPagination::Rails
