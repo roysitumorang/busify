@@ -14,6 +14,17 @@ en:
       companies: "Operators"
       new: "New"
       edit: "Edit"
+    provinces:
+      root: "Home"
+      provinces: "Provinces"
+      new: "New"
+      edit: "Edit"
+    cities:
+      root: "Home"
+      provinces: "Provinces"
+      cities: "Cities"
+      new: "New"
+      edit: "Edit"
   helpers:
     actions: "Actions"
     links:

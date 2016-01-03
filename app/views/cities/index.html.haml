@@ -1,0 +1,28 @@
+%ul.pager
+  %li.pull-left
+    = link_to(edit_province_path(@province.slug)) do
+      = fa_icon(:edit)
+      = _('Edit').html_safe
+  %li.pull-right
+    = link_to(new_province_city_path(@province.slug)) do
+      = fa_icon('plus-circle')
+      = _('New').html_safe
+
+.table-responsive
+  %table.table.table-bordered.table-striped
+    %thead
+      %tr
+        %th.text-center= _('Name')
+        %th
+
+    %tbody
+      - @cities.each do |city|
+        %tr
+          %td= city.name
+          %td.text-center
+            = link_to edit_province_city_path(@province.slug, city.slug) do
+              = fa_icon(:edit)
+              = _('Edit').html_safe
+
+%ul.pager
+  %li.pull-right= will_paginate @cities, renderer: BootstrapPagination::Rails

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151231141649) do
+ActiveRecord::Schema.define(version: 20160102133026) do
 
   create_table "companies", force: :cascade do |t|
     t.string   "name",          limit: 255,              null: false
@@ -30,6 +30,24 @@ ActiveRecord::Schema.define(version: 20151231141649) do
   add_index "companies", ["operator_type"], name: "index_companies_on_operator_type", using: :btree
   add_index "companies", ["slug"], name: "index_companies_on_slug", using: :btree
   add_index "companies", ["updated_by"], name: "index_companies_on_updated_by", using: :btree
+
+  create_table "places", force: :cascade do |t|
+    t.integer  "region_id"
+    t.string   "name",       limit: 255, null: false
+    t.string   "type",       limit: 255, null: false
+    t.string   "slug",       limit: 255, null: false
+    t.integer  "created_by"
+    t.integer  "updated_by"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "places", ["created_by"], name: "index_places_on_created_by", using: :btree
+  add_index "places", ["name"], name: "index_places_on_name", using: :btree
+  add_index "places", ["region_id"], name: "index_places_on_region_id", using: :btree
+  add_index "places", ["slug"], name: "index_places_on_slug", using: :btree
+  add_index "places", ["type"], name: "index_places_on_type", using: :btree
+  add_index "places", ["updated_by"], name: "index_places_on_updated_by", using: :btree
 
   create_table "sessions", force: :cascade do |t|
     t.string   "session_id", limit: 255, null: false

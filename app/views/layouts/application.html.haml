@@ -29,6 +29,9 @@
             = menu_item root_path do
               = fa_icon :home
               = _('Home')
+            = menu_item provinces_path do
+              = fa_icon :list
+              = n_('Province', 'Provinces', 2)
             = menu_item companies_path do
               = fa_icon :bus
               = _('Companies')

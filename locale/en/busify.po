@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: busify 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2016-01-01 03:45+0700\n"
+"PO-Revision-Date: 2016-01-03 12:18+0700\n"
 "Last-Translator: Roy Situmorang <roy.situmorang@gmail.com>\n"
 "Language-Team: English\n"
 "Language: en\n"
@@ -40,6 +40,9 @@ msgid "Back"
 msgstr ""
 
 msgid "Destroy"
+msgstr ""
+
+msgid "was not found"
 msgstr ""
 
 msgid "was successfully"
@@ -77,3 +80,13 @@ msgstr ""
 
 msgid "Phone"
 msgstr ""
+
+msgid "Province"
+msgid_plural "Provinces"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "City"
+msgid_plural "Cities"
+msgstr[0] ""
+msgstr[1] ""

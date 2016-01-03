@@ -1,0 +1,28 @@
+%ul.pager
+  %li.pull-right
+    = link_to(new_province_path) do
+      = fa_icon('plus-circle')
+      = _('New').html_safe
+
+%table.table.table-bordered.table-striped
+  %thead
+    %tr
+      %th.text-center= _('Name')
+      %th
+      %th
+
+  %tbody
+    - @provinces.each do |province|
+      %tr
+        %td= province.name
+        %td.text-center
+          = link_to edit_province_path(province.slug) do
+            = fa_icon(:edit)
+            = _('Edit')
+        %td.text-center
+          = link_to province_cities_path(province.slug) do
+            = fa_icon('folder-open')
+            = _('Show')
+
+%ul.pager
+  %li.pull-right= will_paginate @provinces, renderer: BootstrapPagination::Rails

@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   scope "(:locale)", locale: /en|id/ do
+    resources :provinces, except: :destroy do
+      resources :cities, except: [:show, :destroy]
+    end
     resources :companies, except: :destroy
     root 'home#index'
   end

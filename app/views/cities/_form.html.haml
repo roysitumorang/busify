@@ -1,0 +1,7 @@
+= bootstrap_form_for [@province, @city], url: url, html: { method: method }, layout: :horizontal do |f|
+  %ul.pager
+    %li.previous.pull-left
+      = link_to(province_cities_path(@province.slug)) { "#{fa_icon('arrow-left')} #{_('Back')}".html_safe }
+    %li.next.pull-right
+      = f.submit _('Save'), class: 'btn btn-primary'
+  = f.text_field :name, label: _('Name'), placeholder: _('Name')

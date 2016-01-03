@@ -14,6 +14,17 @@ id:
       companies: "Operator"
       new: "Tambah"
       edit: "Edit"
+    provinces:
+      root: "Halaman Depan"
+      provinces: "Propinsi"
+      new: "Tambah"
+      edit: "Edit"
+    cities:
+      root: "Halaman Depan"
+      provinces: "Propinsi"
+      cities: "Kota"
+      new: "Tambah"
+      edit: "Edit"
   helpers:
     actions: "Aksi"
     links:

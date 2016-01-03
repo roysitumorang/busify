@@ -1,5 +1,5 @@
 class CompaniesController < ApplicationController
-  before_action :set_company, only: [:show, :edit, :update, :destroy]
+  before_action :set_company, only: [:show, :edit, :update]
   before_action :prepare_form_data, only: [:new, :create, :edit, :update]
   before_action :set_companies_breadcrumb
   before_action :set_company_breadcrumb, only: [:show, :edit, :update]
@@ -59,16 +59,6 @@ class CompaniesController < ApplicationController
         }
         format.json { render json: @company.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /companies/1
-  # DELETE /companies/1.json
-  def destroy
-    @company.destroy
-    respond_to do |format|
-      format.html { redirect_to companies_url, notice: "#{_('Company')} #{_('was successfully')} #{_('destroyed')}." }
-      format.json { head :no_content }
     end
   end
 
