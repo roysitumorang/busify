@@ -28,7 +28,7 @@ id:
     bus_types:
       root: "Halaman Depan"
       bus_types: "Kelas Bis"
-      new: "New"
+      new: "Tambah"
       edit: "Edit"
   helpers:
     actions: "Aksi"
